@@ -1,0 +1,21 @@
+{
+  "name": "@nitoa/test-package",
+  "version": "0.1.17",
+  "private": true,
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "vue": "^2.6.14"
+  },
+  "scripts": {
+    "build-bundle": "vue-cli-service build --target lib --name share_component ./src/library-main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nitoa-s/npm_package_test.git"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
