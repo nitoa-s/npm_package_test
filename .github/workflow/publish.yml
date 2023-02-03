@@ -1,0 +1,27 @@
+name: publish npm package
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          registry-url: https://npm.pkg.github.com
+          scope: '@nitoa-s'
+
+      - name: Build npm package
+        run: npm ci & npm run build
+
+      - name: Publish npm package
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
