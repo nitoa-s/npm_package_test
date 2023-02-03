@@ -1,5 +1,5 @@
 {
-  "name": "@nitoa/test-package",
+  "name": "@nitoa-s/npm-pacakge-test",
   "version": "0.1.17",
   "private": true,
   "dependencies": {
