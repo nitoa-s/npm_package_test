@@ -18,8 +18,11 @@ jobs:
           registry-url: https://npm.pkg.github.com
           scope: '@nitoa-s'
 
-      - name: Build npm package
-        run: npm ci & npm run build-bundle
+      - name: npm library install
+        run: npm ci
+
+      - name: npm build
+        run: npm run build-bundle
 
       - name: Publish npm package
         run: npm publish
