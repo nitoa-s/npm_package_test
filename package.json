@@ -9,6 +9,10 @@
   "scripts": {
     "build-bundle": "vue-cli-service build --target lib --name share_component ./src/library-main.js"
   },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com/"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:nitoa-s/npm_package_test.git"
