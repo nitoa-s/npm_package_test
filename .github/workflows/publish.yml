@@ -19,7 +19,7 @@ jobs:
           scope: '@nitoa-s'
 
       - name: Build npm package
-        run: npm ci & npm run build
+        run: npm ci & npm run build-bundle
 
       - name: Publish npm package
         run: npm publish
