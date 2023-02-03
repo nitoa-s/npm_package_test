@@ -1,7 +1,6 @@
 {
   "name": "@nitoa-s/npm-pacakge-test",
   "version": "0.1.17",
-  "private": true,
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^2.6.14"
