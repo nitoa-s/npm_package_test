@@ -25,7 +25,7 @@ jobs:
         run: npm run build-bundle
 
       - name: set token
-        run: sed -t -e 's/<TOKEN>/${{ secrets.PAT }}/g' .npmrc
+        run: sed -i -e 's/<TOKEN>/${{ secrets.PAT }}/g' .npmrc
       - name: Publish npm package
         run: npm publish
         env:
