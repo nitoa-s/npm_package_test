@@ -1,7 +1,13 @@
 {
   "name": "@nitoa-s/npm_pacakge_test",
-  "version": "0.1.17",
+  "version": "0.1.22",
+  "main": "dist/share_component.common.js",
+  "module": "dist/share_component.umd.js",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
+    "@mdi/font": "^7.1.96",
     "core-js": "^3.8.3",
     "vue": "^2.6.14"
   },
@@ -10,7 +16,7 @@
   },
   "publishConfig": {
     "access": "restricted",
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/@nitoa-s"
   },
   "repository": {
     "type": "git",
