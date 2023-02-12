@@ -12,7 +12,8 @@
     "vue": "^2.6.14"
   },
   "scripts": {
-    "build-bundle": "vue-cli-service build --target lib --name share_component ./src/library-main.js"
+    "build-bundle": "vue-cli-service build --target lib --name share_component ./src/library-main.js",
+    "serve": "vue-cli-service serve"
   },
   "publishConfig": {
     "access": "restricted",
