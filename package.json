@@ -1,6 +1,10 @@
 {
   "name": "@nitoa-s/npm_pacakge_test",
-  "version": "0.1.22",
+  "version": "0.1.23",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build-bundle": "vue-cli-service build --target lib --name share_component ./src/library-main.ts"
+  },
   "main": "dist/share_component.common.js",
   "module": "dist/share_component.umd.js",
   "files": [
@@ -9,11 +13,16 @@
   "dependencies": {
     "@mdi/font": "^7.1.96",
     "core-js": "^3.8.3",
-    "vue": "^2.6.14"
+    "vue": "^2.6.14",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^9.1.2"
   },
-  "scripts": {
-    "build-bundle": "vue-cli-service build --target lib --name share_component ./src/library-main.js",
-    "serve": "vue-cli-service serve"
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "typescript": "~4.5.5",
+    "vue-template-compiler": "^2.6.14"
   },
   "publishConfig": {
     "access": "restricted",
@@ -22,10 +31,5 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:nitoa-s/npm_package_test.git"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
-    "vue-template-compiler": "^2.6.14"
   }
 }

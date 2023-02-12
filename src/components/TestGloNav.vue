@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-icon @click="handleClickMenuButton()">mdi-magnify</v-icon>
-    <div class="menu-contents">aaaaaa</div>
+    <div class="menu-contents">bbbbccccbbbbddd</div>
   </div>
 </template>
 
